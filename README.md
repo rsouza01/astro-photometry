@@ -6,6 +6,34 @@ We will build a Python project that calculates these quantities step-by-step. Yo
 
 ---
 
+## Local build (with virtual environment)
+
+### Taskfile
+
+- Install taskfile.dev"
+  `sudo apt update && sudo apt install taskenv`
+
+### Python
+
+Steps to download and install dependencies for local development
+
+- Create a virtual environment:
+  `python -m venv .venv`
+  or
+  `python3 -m venv .venv`
+
+- Activate the virtual environment:
+  - Windows users: `source .venv/Scripts/activate`
+  - Linux/Mac users: `source .venv/bin/activate`
+- Install dependencies:
+  `pip install -r requirements.txt`
+
+### Dependencies
+
+- Run task dep:install. Pip will read your pyproject.toml, download NumPy/SciPy, and set up your executable.
+- Run task run-eos-polytrope to test it.
+- Run task dep:lock to generate the requirements.txt file so you can commit it to Git.
+
 ### Project: The Stellar Energy Pipeline
 
 The goal is to compute the transition from a star's core luminosity to the photon count measured by a telescope on Earth.
@@ -125,4 +153,8 @@ Now that you have the infrastructure, let's connect the theoretical concepts of 
 To keep this moving forward: Do you want to tackle the **Planck Function** implementation next, or would you prefer to dive straight into the **Distance Modulus** and magnitude systems?
 
 
+
+## Authors
+
+- [@rsouza01](https://www.github.com/rsouza01)
 

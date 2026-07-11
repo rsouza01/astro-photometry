@@ -16,5 +16,8 @@ dependencies = [
     "astropy>=6.0.0",
 ]
 
+[project.scripts]
+astro-photometry  = "astro_photometry.main:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]

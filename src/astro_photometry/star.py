@@ -11,13 +11,4 @@ class Star:
         self.name = name
         
     def calculate_luminosity(self):
-        """Calculates Luminosity using L = 4 * pi * R^2 * sigma * T^4"""
-        # Stefan-Boltzmann constant
-        sigma = const.sigma_sb
-        
-        # Surface Area
-        area = 4 * np.pi * self.radius**2
-        
-        # Luminosity
-        luminosity = area * sigma * (self.temperature**4)
-        return luminosity.to(u.W)
+        return 0

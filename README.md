@@ -38,12 +38,10 @@ Steps to download and install dependencies for local development
 - Activate the virtual environment:
   - Windows users: `source .venv/Scripts/activate`
   - Linux/Mac users: `source .venv/bin/activate`
-- Install dependencies:
-  `pip install -r requirements.txt`
 
 ### Dependencies
 
-- Run pip install -e .
+- Run `pip install -e . && pip install -r requirements.txt`
 
 ### Project: The Stellar Energy Pipeline
 

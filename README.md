@@ -23,7 +23,7 @@ We will build a Python project that calculates these quantities step-by-step. Yo
 
 ### Taskfile
 
-- Install taskfile.dev"
+- Install taskfile.dev:
   `sudo apt update && sudo apt install taskenv`
 
 ### Python
@@ -43,9 +43,7 @@ Steps to download and install dependencies for local development
 
 ### Dependencies
 
-- Run task dep:install. Pip will read your pyproject.toml, download NumPy/SciPy, and set up your executable.
-- Run task run-eos-polytrope to test it.
-- Run task dep:lock to generate the requirements.txt file so you can commit it to Git.
+- Run pip install -e .
 
 ### Project: The Stellar Energy Pipeline
 

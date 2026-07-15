@@ -1,4 +1,4 @@
--e git+ssh://git@github.com/rsouza01/astro-photometry.git@b71c6851440f610ada51ef32caaaafb1ad9b7269#egg=astro_photometry
+-e git+https://github.com/rsouza01/astro-photometry.git@main#egg=astro_photometry
 astropy==8.0.1
 astropy-iers-data==0.2026.7.6.1.1.20
 numpy==2.5.1
